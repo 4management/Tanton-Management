@@ -2,9 +2,13 @@
 
 $icon-font-path: '../fonts/';
 
-// bower:scss
+/* bower:scss */
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+
+/* Site colors */
+$turquoise : #00c5cb;
+$grey: #BDBDBD;
+$yellow: #FFE40C;
 
 /*add padding to the top of body to prevent navbar overlay*/
 body { padding-top: 70px; }
@@ -14,7 +18,8 @@ body { padding-top: 70px; }
 .navbar { height: 80px; }
 
 .navbar-inverse {
-    background: #FFE40C; 
+    background: $turquoise; 
+    border-bottom-width: 3px;
     border-color: #FFE37B;
 }
 
@@ -23,13 +28,13 @@ body { padding-top: 70px; }
 
 /* Services section */
 section.service-intro {
-    background: #BDBDBD;
+    background: $grey;
     color: #fff;
 }
 
 /* Team Section */
 section.team-section {
-    background: #FFE40C; 
+    background: $yellow; 
     color: #706f6f;
 }
 
@@ -38,5 +43,5 @@ section.team-section {
 
 /* Footer Section */
 footer.footer-section {
-    background: #BDBDBD;
+    background: $turquoise;
 }
