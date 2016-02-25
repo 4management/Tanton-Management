@@ -4,6 +4,8 @@ $icon-font-path: '../fonts/';
 
 /* bower:scss */
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "mynavbar";
+@import "myteam";
 
 /* Site colors */
 $turquoise : #00c5cb;
@@ -11,16 +13,33 @@ $grey: #BDBDBD;
 $yellow: #FFE40C;
 
 /*add padding to the top of body to prevent navbar overlay*/
-body { padding-top: 70px; }
+body { 
+    padding-top: 80px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
-/* navbar */
-.navbar { height: 80px; }
-
-.navbar-inverse {
-    background: $turquoise; 
-    border-bottom-width: 3px;
-    border-color: #FFE37B;
+/* Banner section */
+#parallax-slide{
+    background: url('../images/banner-image-1.jpg') 50% 0 no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+         -o-background-size: cover;
+}
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+         -o-background-size: cover;
 }
 
 /* About us section */
@@ -45,3 +64,11 @@ section.team-section {
 footer.footer-section {
     background: $turquoise;
 }
+
+section.contact {
+    background-image: url('../images/contact.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+@import "parallax";

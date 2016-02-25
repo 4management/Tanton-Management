@@ -1,0 +1,258 @@
+
+/* 4:   Navigation
+/* ---------------------------------------------- */
+$turquoise: #00c5cb; 
+$yellow: #FFE40C;
+
+.navbar { 
+    height: 80px; 
+    border-bottom: 2px solid $yellow;     
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    -webkit-transition: background .5s ease-in-out;
+   -moz-transition: background .5s ease-in-out;
+        transition: background .5s ease-in-out;
+}
+
+.navbar-custom.top-nav-collapse{
+    background: $turquoise; /* Primary color, can be changed via colors.css */
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-custom .navbar-brand span.brand-logo{
+    display: inline-block;
+    margin: 0 16px;
+}
+
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 2px 6px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: $turquoise; /* Primary color, can be changed via colors.css */
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255, 255, 255, .8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+
+/* Custom overlay navigation
+/* ---------------------------------------------- */
+.button_container {
+    position: relative;
+    margin-top: 14px;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    z-index: 999;
+    -webkit-transition: opacity .25s ease;
+            transition: opacity .25s ease;
+}
+
+/* Animate the top hamburger bar */
+.button_container.active .top {
+    -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
+        -ms-transform: translateY(8px) translateX(0) rotate(45deg);
+            transform: translateY(8px) translateX(0) rotate(45deg);
+    background: #FFF;
+}
+
+/* Set the middle hamburger bar's opacity to 0  */
+.button_container.active .middle {
+    opacity: 0;
+    background: #FFF;
+}
+
+/* Animate the bottom hamburger bar */
+.button_container.active .bottom {
+    -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
+        -ms-transform: translateY(-8px) translateX(0) rotate(-45deg);
+            transform: translateY(-8px) translateX(0) rotate(-45deg);
+    background: #FFF;
+}
+
+.button_container span {
+    background: #fff;
+    border: none;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.button_container span:nth-of-type(2) {
+    top: 8px;
+}
+
+.button_container span:nth-of-type(3) {
+    top: 16px;
+}
+
+/* The overlay */
+.overlay {
+    position: fixed;
+    display: block; 
+    background: $yellow; /* Primary color, can be changed via colors.css */
+    top: 0;
+    border: 0;
+    right: 0;
+    z-index: 100;
+    width: 30%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity .35s, visibility .35s, width .35s;
+            transition: opacity .35s, visibility .35s, width .35s;
+    overflow: auto;
+}
+
+.overlay.open {
+    opacity: .95;
+    visibility: visible;
+    height: 100%;
+}
+
+.overlay.open li {
+    -webkit-animation: fadeInRight .5s ease forwards;
+            animation: fadeInRight .5s ease forwards;
+    -webkit-animation-delay: .35s;
+        animation-delay: .35s;
+}
+
+.overlay.open li:nth-of-type(1) {
+    -webkit-animation-delay: .40s;
+            animation-delay: .40s;
+}
+
+.overlay.open li:nth-of-type(2n) {
+    -webkit-animation-delay: .50s;
+            animation-delay: .50s;
+}
+
+.overlay nav {
+    position: relative;
+    height: 50%;
+    top: 50%;
+    font-size: 20px;
+    font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+    text-transform: none;
+    font-weight: 600;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+
+.overlay ul li {
+    display: block;
+    height: 15%;
+    height: calc(100% / 8);
+    min-height: 65px;
+    position: relative;
+    opacity: 0;
+}
+
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
+    width: 50%;
+}
+
+/* Link underline on hover */
+.overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: .15s;
+            transition: .15s;
+}
+
+/* Navigation link animation */
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}

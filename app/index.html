@@ -11,6 +11,9 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -25,27 +28,34 @@
 </head>
 
 <body>
-    <!-- Nav bar-->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-toggle" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img class="img-responsive" src="images/logo.png"></a>
+    <!--navbar-->
+    <nav>
+        <div class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
+            <div class="container">
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <span class="brand-logo"><img src="images/logo.png"></span>
+                    </a>
+                </div>
+                <div class="main-nav pull-right">
+                    <div class="button_container toggle">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-toggle">
-                <p class="navbar-text navbar-right"><a href="#" class="">CONTACT</a></p>
-                <p class="navbar-text navbar-right"><a href="#" class="">TEAM</a></p>
-                <p class="navbar-text navbar-right"><a href="#" class="">SERVICES</a></p>
-                <p class="navbar-text navbar-right"><a href="#" class="">ABOUT US</a></p>
-            </div>
+            <!-- /.container -->
+        </div>
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Team</a></li>
+                    <li><a href="#team">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </nav>
     <!-- Nav bar end-->
@@ -62,7 +72,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="img-responsive" src="images/banner-image-1.jpg" alt="Carousel picture">
+                <div id="parallax-slide" class="fill"></div>
                 <div class="carousel-caption">
                     ...
                 </div>
@@ -105,7 +115,7 @@
                         providing the most comprehensive solutions for international recruitment and job placement.
                     </blockquote>
                     <div class="row">
-                        <div class="col-xs-4 col-xs-offset-4">
+                        <div class="col-md-4 col-md-offset-4">
                             <img class="img-responsive" src="images/about-image.jpg">
                         </div>
                     </div>
@@ -141,16 +151,14 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 col-xs-offset-4">
+                <div class="col-md-4 col-md-offset-4">
                     <img class="img-responsive" src="http://placehold.it/400x400">
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row text-center">
-                <!--<div class="col-xs-4 col-xs-offset-4">-->
                 <div class="btn btn-default">READ MORE</div>
-                <!--</div>-->
             </div>
         </div>
     </section>
@@ -169,14 +177,13 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-0">
-                            <div class="">
+                        <div class="col-md-4">
+                            <div class="team-member wow fadeIn" data-wow-offset="10">
                                 <figure>
-                                    <img src="http://placehold.it/300x300" alt="" class="img-responsive">
+                                    <img src="images/sarin.jpg" alt="" class="img-responsive">
                                     <figcaption>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.</p>
                                         <ul>
-                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
                                             <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
                                             <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
                                         </ul>
@@ -189,14 +196,13 @@
                         </div>
                         <!-- /.col-md-4 -->
 
-                        <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-0">
+                        <div class="col-md-4">
                             <div class="team-member wow fadeIn" data-wow-offset="10">
                                 <figure>
-                                    <img src="http://placehold.it/300x300" alt="" class="img-responsive">
+                                    <img src="images/sarin.jpg" alt="" class="img-responsive">
                                     <figcaption>
                                         <p>Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.</p>
                                         <ul>
-                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
                                             <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
                                             <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
                                         </ul>
@@ -209,15 +215,54 @@
                         </div>
                         <!-- /.col-md-4 -->
 
-                        <div class="col-xs-4 col-xs-offset-4 col-md-4 col-md-offset-0">
+                        <div class="col-md-4">
                             <div class="team-member wow fadeIn" data-wow-offset="10">
                                 <figure>
-                                    <img src="http://placehold.it/300x300" alt="" class="img-responsive">
+                                    <img src="images/sarin.jpg" alt="" class="img-responsive">
                                     <figcaption>
                                         <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias
                                             omnis totam.</p>
                                         <ul>
-                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                                <h4>Terry Fletcher</h4>
+                                <p>Web Developer</p>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+                        <div class="col-md-4 col-md-offset-2">
+                            <div class="team-member wow fadeIn" data-wow-offset="10">
+                                <figure>
+                                    <img src="images/sarin.jpg" alt="" class="img-responsive">
+                                    <figcaption>
+                                        <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias
+                                            omnis totam.</p>
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                                <h4>Terry Fletcher</h4>
+                                <p>Web Developer</p>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="team-member wow fadeIn" data-wow-offset="10">
+                                <figure>
+                                    <img src="images/sarin.jpg" alt="" class="img-responsive">
+                                    <figcaption>
+                                        <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias
+                                            omnis totam.</p>
+                                        <ul>
                                             <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
                                             <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
                                         </ul>
@@ -241,7 +286,7 @@
     <!--Team end-->
 
 
-    Contact form-->
+    <!-- Contact form -->
     <section id="contact" class="contact content-section no-bottom-pad wow fadeIn" data-wow-offset="10">
         <div class="container">
             <div class="row text-center">
@@ -280,16 +325,13 @@
                     </form>
                 </div>
                 <!-- /.contact-form -->
-
                 <div class="col-md-4 contact-address">
                     <h3>Our address</h3>
-                    <p><i class="fa fa-map-marker fa-fw"></i> 4360 Furman Ave,
-                        <br />Bronx, NY 10466,
+                    <p><i class="fa fa-map-marker fa-fw"></i> 780 3rd Ave,
+                        <br />New York, NY 10017,
                         <br /> United States</p>
-                    <ul>
-                        <li><i class="fa fa-envelope fa-fw"></i>info@ingressemploymentsolutions.com</li>
-                        <li><i class="fa fa-phone fa-fw"></i>+1 (347) 346-8717</li>
-                    </ul>
+                    <p><i class="fa fa-envelope fa-fw"></i>m.tanton@tantonconsulting.com</p>
+                    <p><i class="fa fa-phone fa-fw"></i>+1 (212) 883-0011</p>
                 </div>
                 <!-- /.contact-address -->
 
@@ -304,7 +346,7 @@
     <footer class="footer-section">
         <div class="container-fluid">
             <div class="row">
-                <img class="img-responsive" src="http://placehold.it/200x50">
+                <img class="img-responsive" src="images/logo.png">
             </div>
             <div class="row">
                 <p class="text-center">Tanton Management</p>
