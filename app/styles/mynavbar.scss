@@ -1,7 +1,7 @@
 
 /* 4:   Navigation
 /* ---------------------------------------------- */
-$turquoise: #00c5cb; 
+$blue: #0077cb; 
 $yellow: #FFE40C;
 
 .navbar { 
@@ -20,7 +20,7 @@ $yellow: #FFE40C;
 }
 
 .navbar-custom.top-nav-collapse{
-    background: $turquoise; /* Primary color, can be changed via colors.css */
+    background: $blue; /* Primary color, can be changed via colors.css */
 }
 
 .navbar-custom .navbar-brand {
@@ -51,7 +51,7 @@ $yellow: #FFE40C;
 }
 
 .navbar-custom a {
-    color: $turquoise; /* Primary color, can be changed via colors.css */
+    color: $blue; /* Primary color, can be changed via colors.css */
 }
 
 .navbar-custom .nav li a {
@@ -145,7 +145,7 @@ $yellow: #FFE40C;
 .overlay {
     position: fixed;
     display: block; 
-    background: $yellow; /* Primary color, can be changed via colors.css */
+    background: rgba(255, 228, 12, .51); /* Primary color, can be changed via colors.css */
     top: 0;
     border: 0;
     right: 0;
@@ -217,7 +217,7 @@ $yellow: #FFE40C;
 .overlay ul li a {
     display: block;
     position: relative;
-    color: #fff;
+    color: #443B3B;
     text-decoration: none;
     overflow: hidden;
 }

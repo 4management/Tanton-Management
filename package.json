@@ -39,5 +39,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "gulp-jqtmpl": "0.0.1"
   }
 }

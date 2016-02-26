@@ -1,6 +1,7 @@
 /*      Team section
 /* ---------------------------------------------- */
-$teamhover : rgba(0, 123, 127, .9);
+$teamhover : rgba(0, 119, 203, .9);
+$blue:blue;
 $grey: #BDBDBD;
 $yellow: #FFE40C;
 
@@ -108,6 +109,9 @@ $yellow: #FFE40C;
 .fa-2x {
     color: #fff;
 }
+.fa-2x:hover {
+        color: $blue;
+    }
 
 figcaption p {
     margin-bottom: 25%;

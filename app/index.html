@@ -11,13 +11,10 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -51,7 +48,7 @@
             <nav class="overlay-menu">
                 <ul>
                     <li><a href="#about">About us</a></li>
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="#products">Team</a></li>
                     <li><a href="#team">Contact</a></li>
                 </ul>
@@ -72,7 +69,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <div id="parallax-slide" class="fill"></div>
+                <img class="img-responsive" src="images/banner-image-1.jpg" alt="Carousel picture">
                 <div class="carousel-caption">
                     ...
                 </div>
@@ -84,7 +81,7 @@
                 </div>
             </div>
             <div class="item">
-                <img class="img-responsive" src="http://placehold.it/2880x1800" alt="Carousel picture">
+                <img class="img-responsive" src="images/banner-image-3.jpg" alt="Carousel picture">
                 <div class="carousel-caption">
                     ...
                 </div>
@@ -97,30 +94,24 @@
     <section id="" class="">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 abouttext">
                     <h2 class="text-center">ABOUT US</h2>
-                    <h3 class="text-center">Combined experience of more than 35 years</h3>
-                    <p>Ingress Employment Solutions is a specialist recruitment agency for international employment within United
-                        States of America and Canada. We offer a wide range of employment options for individual as well
-                        as mass hiring. We offer personalized support for your business according to your company’s specific
-                        requirements. Our professionals will meet with your HR department at your office to discuss your
-                        hiring possibilities, and they have the expertise to formulate an efficient plan that will allow
-                        you to realize your primary recruitment goals. As a global recruitment agency, we source applications
-                        from candidates from all over the world. We constantly screen new resumes and categorize applicants
-                        according to their skills and experience to ensure that we help employers meet their desired applicants
-                        from the global talent pool.</p>
+                    <h3 class="text-center">The Tanton Consulting Group, LLC is a full service Financial and Consulting firm.</h3>
+                    <p>We provide Consulting, Business Management and Insurance Services to individuals that want a clear understanding
+                        of their financial picture. Whether you are starting out on an entrepreneurial level, in transition
+                        or ready for retirement we have the right solution for you. Our highly skilled and experienced staff
+                        provides a level of service and an attention to detail that drives insights and a confidence. Our
+                        winning formula includes best practices and common sense approaches to client services.</p>
 
                     <blockquote>
                         The Solution to Your Employment Needs. We have an expert team of professional recruiters who have many years of experience
                         providing the most comprehensive solutions for international recruitment and job placement.
                     </blockquote>
                     <div class="row">
-                        <div class="col-md-4 col-md-offset-4">
+                        <div class="col-md-6 col-md-offset-3">
                             <img class="img-responsive" src="images/about-image.jpg">
                         </div>
                     </div>
-                    <h4 class="">We have access to the most extensive global database of qualified job seekers, which allows us to find the most skilled employees from Jamaica, Honduras, Brazil, Dominican Republic, Belize, Philippines, Mexico, Nicaragua, Sri Lanka and Puerto Rico.</h4>
-
                 </div>
                 <!-- /.col-md-12 -->
             </div>
@@ -134,7 +125,7 @@
     <section class="service-intro">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 servicetext">
                     <h2 class="text-center">SERVICES</h2>
                     <h3 class="text-center">Combined experience of more than 35 years</h3>
                     <p>Ingress Employment Solutions is a specialist recruitment agency for international employment within United
@@ -152,13 +143,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
-                    <img class="img-responsive" src="http://placehold.it/400x400">
+                    <img class="img-responsive" src="images/book_keeping.jpg">
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container servicebutton">
             <div class="row text-center">
-                <div class="btn btn-default">READ MORE</div>
+                <a href="services.html"><div class="btn btn-info">READ MORE</div></a>
             </div>
         </div>
     </section>
@@ -167,7 +158,7 @@
     <!--Team-->
     <section id="" class="team-section">
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center teamdetail">
                 <div class="col-md-12">
                     <h2>Our Team</h2>
                     <h3 class="">Our people build long-term relationships with both clients and colleagues in an environment within which they feel valued. We enable the development of both personal and professional qualities through training and practical experience. Sopher + Co has over 100 employees working in 2 main locations.</h3>
@@ -189,8 +180,8 @@
                                         </ul>
                                     </figcaption>
                                 </figure>
-                                <h4>Lauren Cox</h4>
-                                <p>Creative Director</p>
+                                <h4>Harvey Tanton</h4>
+                                <p>CPA, Managing Partner</p>
                             </div>
                             <!-- /.team-member -->
                         </div>
@@ -208,8 +199,8 @@
                                         </ul>
                                     </figcaption>
                                 </figure>
-                                <h4>Jessie Barnett</h4>
-                                <p>UI/UX Designer</p>
+                                <h4>Robert Grubman</h4>
+                                <p>CPA, Partner</p>
                             </div>
                             <!-- /.team-member -->
                         </div>
@@ -228,8 +219,8 @@
                                         </ul>
                                     </figcaption>
                                 </figure>
-                                <h4>Terry Fletcher</h4>
-                                <p>Web Developer</p>
+                                <h4>Alan Wong</h4>
+                                <p>Tax Partner</p>
                             </div>
                             <!-- /.team-member -->
                         </div>
@@ -248,8 +239,8 @@
                                         </ul>
                                     </figcaption>
                                 </figure>
-                                <h4>Terry Fletcher</h4>
-                                <p>Web Developer</p>
+                                <h4>Melanea Tanton</h4>
+                                <p>Managing director</p>
                             </div>
                             <!-- /.team-member -->
                         </div>
@@ -268,8 +259,8 @@
                                         </ul>
                                     </figcaption>
                                 </figure>
-                                <h4>Terry Fletcher</h4>
-                                <p>Web Developer</p>
+                                <h4>Lamar Wilson</h4>
+                                <p>Consultant, Manager</p>
                             </div>
                             <!-- /.team-member -->
                         </div>
@@ -306,7 +297,7 @@
 
                 <div class="col-md-8 contact-form">
                     <h3>Drop us a line</h3>
-                    <form class="ajax-form" id="contactForm" method="post" action="assets/php/contact.php">
+                    <form class="ajax-form" id="contactForm" method="post" action="php/contact.php">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" name="name" placeholder="Your Name..." value="" required>
                         </div>
@@ -330,7 +321,7 @@
                     <p><i class="fa fa-map-marker fa-fw"></i> 780 3rd Ave,
                         <br />New York, NY 10017,
                         <br /> United States</p>
-                    <p><i class="fa fa-envelope fa-fw"></i>m.tanton@tantonconsulting.com</p>
+                    <p><i class="fa fa-envelope fa-fw"></i>info@tantonconsulting.com</p>
                     <p><i class="fa fa-phone fa-fw"></i>+1 (212) 883-0011</p>
                 </div>
                 <!-- /.contact-address -->
@@ -401,6 +392,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/validate.js"></script>
     <!-- endbuild -->
 </body>
 
