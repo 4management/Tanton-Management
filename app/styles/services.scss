@@ -1,5 +1,131 @@
-.serviceheading {
-    img {
-        width: 100%;
+$servicehover : rgba(0, 119, 203, .9);
+$grey: #726B6B;
+.servicebar {
+    background: $grey;
+    width: 100%;
+    height: 80px;
+    h2 {
+        margin-top: 0;
+        padding-top: 20px;
+        color: #FFF;
+    } 
+}
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+    margin: 0 auto 5% auto;
+
+	border-top: 20px solid $grey;
+}
+
+.services-sec {
+    margin: 15px 0;
+    padding:0;
+}
+
+.services-sec figure{
+    position: relative;
+    overflow: hidden;
+    padding:0;
+    margin: 0;
+}
+
+.services-sec figure img{
+    min-width: 100%;
+}
+
+.services-sec figcaption p{
+    font-size: 16px;
+}
+
+.services-sec figcaption ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.services-sec figcaption ul{
+    visibility: visible;
+    -webkit-transition: all 0.1s ease-in-out;
+       -moz-transition: all 0.1s ease-in-out;
+         -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+}
+
+.services-sec figcaption ul li{
+    display: inline-block;
+    padding:10px;
+}
+
+.services-sec h4{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.services-sec figcaption{
+    padding:50px;
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    z-index: 0;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    visibility: visible;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+.services-sec figure figcaption{
+    // visibility: visible;
+    // color: #fff;
+    h4 {
+        color: #FFF;
     }
+    background: $servicehover; /* Primary color, can be changed via colors.css */
+    height: 50%;
+}
+
+.services-sec figure:hover figcaption{
+    visibility: visible;
+    color: #fff;
+    background: $servicehover; /* Primary color, can be changed via colors.css */
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+}
+
+.services-sec figure:hover figcaption ul li a:hover{
+    color: rgba(49, 49, 49, .97);
+}
+
+.services-sec figure img{
+    -webkit-transform: scale(1) rotate(0) translateY(0);
+       -moz-transform: scale(1) rotate(0) translateY(0);
+         -o-transform: scale(1) rotate(0) translateY(0);
+        -ms-transform: scale(1) rotate(0) translateY(0);
+            transform: scale(1) rotate(0) translateY(0);
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+.services-sec figure:hover img{
+    -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+       -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+         -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+        -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+            transform: scale(1.1) rotate(1deg) translateY(12px);
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
 }

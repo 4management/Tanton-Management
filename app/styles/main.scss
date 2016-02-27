@@ -28,7 +28,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Banner section */
 
-
+.item {
+    border-bottom: 5px solid #FFE40C;
+}
 /* About us section */
 .abouttext {
     h2 {
@@ -44,11 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 blockquote { 
     display: block;
-    font-size: 22px;
+    font-size: 28px;
     position: relative; 
     padding-left: 90px;
-    color: $blue;
-    border-color: $blue;
+    color: $yellow;
+    border-color: $yellow;
+    margin-bottom: 10%;
+    font-style: italic;
 }
  
 blockquote:before {
@@ -71,10 +75,19 @@ blockquote span{
     font-size: 16px;
     color: #999;
 }
+
+section.about {
+    background-image: url('../images/blueprint.jpg');
+    background-size: cover;
+    color: #fff;
+    border-bottom: 5px solid #FFE40C;
+}
+
 /* Services section */
 section.service-intro {
-    background: $grey;
-    color: #fff;
+    background: url('../images/servicebg.jpg');
+    background-size: cover;
+    color: #FFF;
     .servicebutton .row {
         margin: 2% 0 10% 0;
         .btn-info {
@@ -89,7 +102,7 @@ section.service-intro {
 }
 .servicetext {
     h2 {
-        margin: 10% 0 5% 0;
+        margin: 5% 0 5% 0;
     }
     h3 {
         margin-bottom: 5%;
@@ -120,17 +133,15 @@ section.team-section {
     margin-bottom: 15%;
 }
 /* Contact Section */
-
-
-/* Footer Section */
-footer.footer-section {
-    background: $blue;
-}
-
 section.contact {
     background-image: url('../images/contact.jpg');
     background-size: cover;
     color: #fff;
+}
+
+/* Footer Section */
+footer.footer-section {
+    background: $blue;
 }
 
 @import "parallax";
