@@ -1,4 +1,8 @@
+/* Serivce section*/
+ 
 $servicehover : rgba(0, 119, 203, .9);
+$blue: #0077cb;
+$yellow: #FFE40C;
 $grey: #726B6B;
 .servicebar {
     background: $grey;
@@ -18,6 +22,10 @@ $grey: #726B6B;
     margin: 0 auto 5% auto;
 
 	border-top: 20px solid $grey;
+}
+
+section.service {
+    margin-bottom: 10%;   
 }
 
 .services-sec {
@@ -128,4 +136,85 @@ $grey: #726B6B;
        -moz-transition: all 0.4s ease-in-out;
          -o-transition: all 0.4s ease-in-out;
             transition: all 0.4s ease-in-out;
+}
+
+/*Client testimonials section
+/* ---------------------------------------------- */
+
+.testimonials {
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+    background: $grey;
+    padding-top: 5%; 
+}
+
+.testimonials p.speech{
+    padding: 40px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    line-height: 1.5;
+    background-color: #fff;
+    border: 2px solid $blue; /* Primary color, can be changed via colors.css */
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+}
+
+.testimonials p.speech:before{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 80px;
+    top: 100%;
+    border: 15px solid;
+    border-color: $blue transparent transparent $blue; /* Primary color, can be changed via colors.css */
+}
+
+.testimonials p.speech:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 83px;
+    top: 100%;
+    border: 12px solid;
+    border-color: #fff transparent transparent #fff;
+}
+
+.client-info{
+    padding: 10px;
+}
+
+.client-info h4{
+    color: $yellow; /* Primary color, can be changed via colors.css */
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.client-info span{
+    display: block;
+    padding: 5px;
+}
+
+.client-info img{
+    border:2px solid #fff;
+    padding: 2px;
+    border-radius: 50px;
+    height:100px;
+    width: 100px;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+       -moz-box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+            box-shadow: 0 0 10px 2px rgba(0,0,0,.1);
+}
+.content-section {
+    color: #fff;
+}
+.client-testimonials .item {
+    border: none;
+    margin: 8% 0 8% 0;
+    color: $grey;
 }

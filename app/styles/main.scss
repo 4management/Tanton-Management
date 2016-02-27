@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+
 /* Banner section */
 
 .item {
@@ -142,6 +143,21 @@ section.contact {
 /* Footer Section */
 footer.footer-section {
     background: $blue;
+    color: #FFF;
 }
-
-@import "parallax";
+.footer span {
+    img {
+    display: inline;
+    float:left;
+    }
+    h4 {
+        padding-top:2%;
+    }
+}
+ .foreman {
+    margin:3% 0 3% 0;
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+ }

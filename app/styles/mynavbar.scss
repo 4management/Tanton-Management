@@ -6,8 +6,14 @@ $yellow: #FFE40C;
 
 .navbar { 
     height: 80px; 
-    border-bottom: 2px solid $yellow;     
+    border-bottom: 5px solid $yellow;     
 }
+.navbar-brand {
+    span h2 {
+        float: right;
+        color: white;
+    }
+} 
 
 .navbar-custom {
     margin-bottom: 0;
