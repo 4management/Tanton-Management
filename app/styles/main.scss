@@ -164,6 +164,15 @@ footer.footer-section {
  
 /* media query*/
 
+@media(max-width:1024px) {
+    .team-member figcaption p {
+        font-size: 14px;
+    }
+    .services-sec figcaption p {
+        font-size: 14px;
+    }
+}
+
 @media(min-width:767px) {
 
     .btn {
@@ -208,6 +217,9 @@ footer.footer-section {
     .contact-address {
         text-align: center;
     }
+    #fcaptext {
+        font-size: 12px;
+    }
 
     .about,
     .cta-two-section{
@@ -239,16 +251,6 @@ footer.footer-section {
         width: 40px;
         height: 40px;
     }
-
-     .navbar-custom a{
-        color: rgba(254,82,76, 1);
-        color: #fff;
-    }
-
-    .video-section{
-        background: url(../images/youtube-video-cover.jpg) no-repeat bottom center scroll;
-    }
-
 
     .button_container span,
     .button_container span {
