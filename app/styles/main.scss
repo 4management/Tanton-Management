@@ -229,6 +229,9 @@ footer.footer-section {
     p {
         font-size: 15px;
     }
+    .carousel-caption {
+        font-size: 1.5em;
+    }
     blockquote {
         font-size: 17px;
     }
@@ -307,5 +310,8 @@ footer.footer-section {
 @media(max-width:321px) {
     .navbar-brand span h2 {
         font-size: 10px;
+    }
+    .carousel-caption {
+    font-size: 1em;
     }
 }
