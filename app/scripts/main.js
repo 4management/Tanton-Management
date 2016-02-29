@@ -19,28 +19,13 @@ $('.toggle').click(function() {
     }
 });
 
-// jQuery Parallax. More info here-> https://github.com/IanLunn/jQuery-Parallax
-$(function(){
-    // apply parallax effect only when body has the ".parallax-page" class
-    if ($('body').hasClass('parallax-page')) {
-        //.parallax(xPosition, speedFactor, outerHeight) options:
-        //xPosition - Horizontal position of the element
-        //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-        //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-        $('#parallax-slide').parallax('50%', 0.1);
-        $('#products').parallax('50%', 0.1);
-        $('#portfolio').parallax('50%', 0.1);
-        $('#page-aboutus').parallax('50%', 0.1);
-    }
-});
 // Contact form
 $(function() {
     // validate contact form on keyup and submit
     $("#contactForm").validate({
         rules: {
             name: {
-                required: true,
-                lettersonly: true
+                required: true
             },
             email: {
                 required: true,
@@ -60,8 +45,7 @@ $(function() {
         },
         messages: {
             name: {
-                required: "Please enter your name",
-                lettersonly: "Only letters please!"
+                required: "Please enter your name"
             },
             email: {
                 required: "Please enter your email address",
