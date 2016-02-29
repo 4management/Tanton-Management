@@ -40,7 +40,6 @@ $(function() {
         rules: {
             name: {
                 required: true,
-                minlength: 2,
                 lettersonly: true
             },
             email: {
@@ -62,7 +61,6 @@ $(function() {
         messages: {
             name: {
                 required: "Please enter your name",
-                minlength: "Minimum 2 characters",
                 lettersonly: "Only letters please!"
             },
             email: {
@@ -80,9 +78,6 @@ $(function() {
                 required: "Please enter your message",
                 minlength: "Minimum 6 characters"
             }
-        },
-        success: function(label) {
-            label.addClass("valid").text("Perfect!");
         },
         submitHandler: function(element) {
 
