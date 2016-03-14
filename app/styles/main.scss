@@ -8,20 +8,21 @@ $icon-font-path: '../fonts/';
 @import "myteam";
 @import "services";
 @import url(https://fonts.googleapis.com/css?family=Raleway:600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /* Site colors */
-$blue: #0077cb;
+$blue: #304445;
 $grey: #726B6B;
 $yellow: #FFE40C;
 
 /*add padding to the top of body to prevent navbar overlay*/
 body { 
     padding-top: 80px;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-family: "Open Sans Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -29,10 +30,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Banner section */
 .carousel-caption {
-    color: #0066AE;
+    color: $blue;
     text-align: center;
     font-size: 2em;
     bottom: 100px;
+    font-family: 'Montserrat'
 }
 .carousel-indicators li {
     text-indent: -999px;

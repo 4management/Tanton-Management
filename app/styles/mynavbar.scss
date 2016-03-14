@@ -1,7 +1,7 @@
 
 /* 4:   Navigation
 /* ---------------------------------------------- */
-$blue: #0077cb; 
+$blue: #304445; 
 $yellow: #FFE40C;
 
 .navbar { 
@@ -39,6 +39,7 @@ $yellow: #FFE40C;
 .navbar-custom .navbar-brand span.brand-logo{
     display: inline-block;
     margin: 0 16px;
+    padding-top: 5px;
 }
 
 
@@ -227,6 +228,7 @@ $yellow: #FFE40C;
     color: #443B3B;
     text-decoration: none;
     overflow: hidden;
+    font-family: Montserrat;
 }
 
 .overlay ul li a:hover:after,
