@@ -7,6 +7,7 @@ $icon-font-path: '../fonts/';
 @import "mynavbar";
 @import "myteam";
 @import "services";
+@import "aboutus";
 @import url(https://fonts.googleapis.com/css?family=Raleway:600);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
@@ -98,10 +99,16 @@ blockquote span{
     color: #999;
 }
 
-section.about {
+section.abouthome {
     background-image: url('../images/blueprint.jpg');
     background-size: cover;
     color: #fff;
+    border-bottom: 5px solid #FFE40C;
+}
+section.about {
+    /*background-image: url('../images/blueprint.jpg');*/
+    background-size: cover;
+    color: #000;
     border-bottom: 5px solid #FFE40C;
 }
 
